@@ -1,4 +1,5 @@
 Tres en Raya con Algoritmo Minimax
+
 Un juego de Tres en Raya (Tic-Tac-Toe) implementado en Python que utiliza el algoritmo Minimax para crear una IA invencible. El proyecto incluye tanto una versión de consola como una interfaz gráfica moderna.
 
 Características
@@ -10,11 +11,13 @@ Análisis de Movimientos: La IA muestra su proceso de toma de decisiones
 Interfaz Moderna: GUI con colores atractivos y diseño limpio
 
 Instalación
+
 Requisitos Previos
 Python 3.6 o superior
 tkinter (generalmente incluido con Python)
 
 Instalación
+
 Clona o descarga el proyecto
 Asegúrate de tener Python instalado:
 bashpython --version
@@ -36,6 +39,7 @@ Siempre juegas primero
 La IA usa Minimax, por lo que es imposible ganarle - solo puedes empatar
 
 Controles
+
 Versión Consola
 
 Ingresa números del 0 al 8 para seleccionar la posición:
@@ -53,6 +57,7 @@ Usa "Nuevo Juego" para reiniciar
 Usa "Reiniciar Marcador" para resetear las puntuaciones
 
 Algoritmo Minimax
+
 ¿Qué es Minimax?
 Minimax es un algoritmo de teoría de juegos que:
 
