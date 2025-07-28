@@ -35,10 +35,6 @@ a_estrella(inicio, destino): Ejecuta el algoritmo A* y devuelve el camino óptim
 visualizar_proceso(historial_expansion): Muestra animación del proceso de búsqueda
 visualizar_arbol_busqueda(historial_expansion): Genera el árbol de búsqueda con Graphviz
 
-Mapa de Rumania
-El programa incluye las siguientes 20 ciudades con sus conexiones y valores heurísticos:
-CiudadHeurística a BucarestCiudadHeurística a BucarestArad366Lugoj244Bucarest0Mehadia241Craiova160Neamt234Drobeta242Oradea380Eforie161Pitesti100Fagaras176Rimnicu Vilcea193Giurgiu77Sibiu253Hirsova151Timisoara329Iasi226Urziceni80Zerind374Vaslui199
-
 Uso
 Ejecución básica
 bashpython astar_romania.py
