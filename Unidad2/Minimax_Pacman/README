@@ -1,6 +1,9 @@
 Pacman - Minimax
+
 Un juego de Pacman completamente autónomo donde una IA  basada en el algoritmo Minimax juega automáticamente. Incluye múltiples optimizaciones algorítmicas, IA inteligente para fantasmas, y una interfaz visual moderna con estadísticas en tiempo real.
+
 Características Principales
+
 IA Autónoma: Pacman juega completamente solo usando Minimax
 Optimizaciones Avanzadas: Poda Alfa-Beta y tabla de transposición
 Fantasmas Inteligentes: IA mejorada para movimientos realistas
@@ -8,20 +11,29 @@ Análisis en Tiempo Real: Estadísticas detalladas del algoritmo
 Modo Poder Estratégico: IA adapta estrategia con power pellets
 Interfaz Visual Rica: Efectos visuales y panel informativo
 Configuración Flexible: Ajuste de profundidad y optimizaciones
+
 Algoritmos Implementados
+
 Minimax con Poda Alfa-Beta
+
 Profundidad configurable: 1-6 niveles (recomendado 3-4)
 Poda Alfa-Beta: Reduce significativamente el espacio de búsqueda
 Evaluación heurística avanzada: Múltiples factores de decisión
+
 Tabla de Transposición
+
 Cache inteligente: Evita recalcular estados ya evaluados
 Optimización de memoria: Reutiliza resultados previos
 Mejora de rendimiento: Reduce tiempo de computación
+
 IA de Fantasmas
+
 Comportamiento realista: Persecución inteligente vs aleatoria (70/30)
 Modo miedo: Huida estratégica durante power pellets
 Variabilidad: Cada fantasma tiene personalidad única
+
 Instalación y Uso
+
 Requisitos
 python>=3.7
 pygame>=2.0.0
@@ -32,12 +44,16 @@ pip install pygame
 
 # Ejecutar el juego
 python pacman_minimax2.py
+
 Configuración Inicial
+
 Al iniciar, podrás configurar:
 Profundidad del algoritmo (1-6)
 Activar/desactivar poda Alfa-Beta
 Otras optimizaciones automáticas
+
 Controles y Funciones
+
 Tecla
 Función
 ESPACIO
@@ -54,6 +70,7 @@ A
 Toggle poda Alfa-Beta
 
 Panel de Información
+
 El panel lateral muestra información detallada:
 Estado del Juego
 Puntuación actual
