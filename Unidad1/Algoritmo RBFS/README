@@ -1,7 +1,9 @@
 Algoritmo RBFS - Búsqueda de Caminos en Grafos
+
 Una implementación completa del algoritmo RBFS (Recursive Best-First Search) para encontrar el camino más corto entre ciudades rumanas. Este proyecto demuestra técnicas avanzadas de búsqueda informada con optimización de memoria.
 
 Descripción del Algoritmo
+
 RBFS (Recursive Best-First Search) es un algoritmo de búsqueda informada que:
 
 Combina las ventajas de A* y búsqueda en profundidad
@@ -10,6 +12,7 @@ Garantiza optimalidad con heurísticas admisibles
 Implementa backtracking inteligente cuando encuentra límites
 
 Características Principales
+
 Algoritmo Óptimo: Encuentra el camino de menor costo garantizado
 Eficiencia de Memoria: O(bd) en lugar de O(b^d) como A*
 Problema Real: Mapa de ciudades rumanas con distancias reales
@@ -19,12 +22,14 @@ Seguimiento Completo: Muestra el proceso de búsqueda paso a paso
 
 Problema: Ruta Arad → Bucarest
 Objetivo
+
 Inicio: Arad
 Destino: Bucarest
 Criterio: Minimizar distancia total
 Método: RBFS con heurística de línea recta
 
 Instalación y Uso
+
 Requisitos
 bashpython >= 3.6
 # No requiere librerías externas
@@ -33,5 +38,6 @@ bash# Ejecutar directamente
 python rbfs.py
 
 Salida Esperada
+
 Camino encontrado: Arad → Sibiu → Rimnicu Vilcea → Pitesti → Bucarest
 Costo total: 418
