@@ -1,0 +1,103 @@
+Algoritmo A* - Búsqueda de Rutas en Rumania
+
+Una implementación completa del algoritmo de búsqueda A* (A-estrella) con visualización interactiva, usando el clásico problema de encontrar rutas entre ciudades de Rumania con destino a Bucarest.
+
+Características
+
+Implementación completa del algoritmo A* con función heurística
+Visualización animada del proceso de búsqueda paso a paso
+Generación del árbol de búsqueda con Graphviz
+Interfaz interactiva para seleccionar ciudad de origen
+Métricas de rendimiento (tiempo de ejecución, nodos explorados, distancia total)
+Representación gráfica del mapa de Rumania con NetworkX
+
+Requisitos
+Dependencias de Python
+bashpip install networkx matplotlib heapq graphviz
+Software adicional
+
+Graphviz: Necesario para la visualización del árbol de búsqueda
+
+Windows: Descargar desde graphviz.org
+macOS: brew install graphviz
+Linux: sudo apt-get install graphviz
+
+
+
+Estructura del Código
+
+Clase Principal: Grafo
+Métodos principales:
+
+agregar_nodo(nombre, heuristica_a_bucarest): Añade una ciudad con su valor heurístico
+agregar_conexion(origen, destino, peso): Crea conexión bidireccional entre ciudades
+a_estrella(inicio, destino): Ejecuta el algoritmo A* y devuelve el camino óptimo
+visualizar_proceso(historial_expansion): Muestra animación del proceso de búsqueda
+visualizar_arbol_busqueda(historial_expansion): Genera el árbol de búsqueda con Graphviz
+
+Mapa de Rumania
+El programa incluye las siguientes 20 ciudades con sus conexiones y valores heurísticos:
+CiudadHeurística a BucarestCiudadHeurística a BucarestArad366Lugoj244Bucarest0Mehadia241Craiova160Neamt234Drobeta242Oradea380Eforie161Pitesti100Fagaras176Rimnicu Vilcea193Giurgiu77Sibiu253Hirsova151Timisoara329Iasi226Urziceni80Zerind374Vaslui199
+
+Uso
+Ejecución básica
+bashpython astar_romania.py
+Flujo de ejecución:
+
+El programa muestra la lista de ciudades disponibles
+Solicita ingresar la ciudad de origen
+Ejecuta el algoritmo A* hacia Bucarest
+Muestra los resultados:
+
+Camino óptimo encontrado
+Distancia total en kilómetros
+Tiempo de ejecución
+Número de nodos explorados
+
+
+Genera visualizaciones:
+
+Animación del proceso de búsqueda
+Árbol completo de búsqueda
+
+Ingrese el nombre de la ciudad de inicio: Arad
+
+¡Camino encontrado!
+Arad -> Sibiu -> Rimnicu Vilcea -> Pitesti -> Bucarest
+Distancia total: 418 km
+Tiempo de ejecución: 0.0032 segundos
+Nodos explorados: 6
+
+Visualizaciones
+1. Animación del Proceso de Búsqueda
+
+Nodos rojos: Ciudad actualmente siendo explorada
+Nodos grises: Ciudades ya visitadas (lista cerrada)
+Nodos verdes: Camino actual desde origen
+Aristas verdes: Conexiones del camino actual
+Valores heurísticos: Mostrados debajo de cada nodo
+
+2. Árbol de Búsqueda A*
+
+Nodos verdes claros: Parte del camino óptimo final
+Nodos azules: Nodos explorados pero no óptimos
+Nodos grises: Nodos potenciales no explorados
+Nodos rosados: Representan ciclos detectados
+Aristas verdes gruesas: Camino óptimo
+Aristas punteadas: Conexiones potenciales no exploradas
+
+Algoritmo A*
+
+Función de evaluación:
+f(n) = g(n) + h(n)
+
+g(n): Costo real desde el inicio hasta el nodo n
+h(n): Función heurística (distancia estimada de n al destino)
+f(n): Función de evaluación total
+
+Características de la implementación:
+
+Admisibilidad: La heurística nunca sobrestima el costo real
+Completitud: Siempre encuentra solución si existe
+Optimalidad: Garantiza encontrar el camino de menor costo
+Eficiencia: Usa heap para mantener la lista abierta ordenada
