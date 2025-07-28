@@ -1,4 +1,5 @@
 Curso de Inteligencia Artificial
+
 Este repositorio contiene cuatro proyectos prácticos que implementan algoritmos fundamentales de Inteligencia Artificial, desarrollados como parte del curso académico.
 
 Proyectos Incluidos
