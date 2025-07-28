@@ -1,4 +1,5 @@
 Mundo de Wumpus - Agente Basado en Percepciones
+
 Una implementación completa del clásico problema del "Mundo de Wumpus" en SWI-Prolog con interfaz gráfica visual. El agente inteligente navega por un mundo peligroso usando únicamente sus percepciones locales para tomar decisiones lógicas.
 Descripción del Problema
 El Mundo de Wumpus es un problema clásico de inteligencia artificial donde un agente debe:
@@ -18,20 +19,25 @@ Modo Paso a Paso: Observa el razonamiento del agente
 Control Manual: Juega tú mismo si lo prefieres
 
 Elementos del Mundo
+
 Entidades Principales
+
 Agente: Comienza en (1,1) mirando al norte
 Wumpus: Criatura peligrosa que mata al agente
 Oro: Objetivo principal del agente
 Pozos: Trampas mortales (20% del mapa)
 
 Percepciones del Agente
+
 Brisa: Hay un pozo en casilla adyacente
 Hedor: El wumpus está en casilla adyacente
 Brillo: Hay oro en la casilla actual
 Grito: El wumpus fue eliminado (después de disparar)
 
 Instalación y Requisitos
+
 Prerrequisitos
+
 Instalar SWI-Prolog
 # Windows: Descargar desde https://www.swi-prolog.org/
 Verificar Interfaz Gráfica
@@ -45,6 +51,7 @@ swipl -s wumpus_world.pl
 ?- [mundo_wumpus].
 
 Cómo Jugar
+
 Inicio del Juego
 prolog?- jugar.
 Esto abrirá la interfaz gráfica con el mundo generado aleatoriamente.
