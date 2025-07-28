@@ -61,3 +61,5 @@ Algoritmos de juegos adversarios
 Programación lógica y sistemas expertos
 Optimización de algoritmos de IA
 Interfaz gráfica para sistemas inteligentes
+
+Autor: Hancco Vilca Yennybel Rocio
