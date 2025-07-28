@@ -3,11 +3,11 @@ Curso de Inteligencia Artificial
 Este repositorio contiene cuatro proyectos prácticos que implementan algoritmos fundamentales de Inteligencia Artificial, desarrollados como parte del curso académico.
 
 Proyectos Incluidos
-1. RBFS - Búsqueda de Caminos
+1. Algoritmo A* - Búsqueda de Rutas en Rumania
 
-Implementación del algoritmo Recursive Best-First Search para encontrar rutas óptimas entre ciudades rumanas.
+Implementación completa del algoritmo A* para encontrar rutas óptimas entre ciudades rumanas hacia Bucarest.
 Tecnología: Python
-Características: Búsqueda informada, memoria optimizada, heurística admisible
+Características: Árbol de búsqueda generado con Graphviz
 Problema: Encontrar la ruta más corta de Arad a Bucarest
 
 3. Mundo de Wumpus
@@ -49,17 +49,9 @@ pip install pygame  # Solo para Pacman
 
 Algoritmos Implementados
 
-RBFS: Búsqueda heurística con memoria limitada
+A*: Búsqueda con algoritmo A estrella y heuristica
 Minimax: Teoría de juegos para decisiones óptimas
 Poda Alfa-Beta: Optimización del árbol Minimax
 Razonamiento Lógico: Inferencia basada en percepciones
-
-Objetivos de Aprendizaje
-
-Búsqueda informada y no informada
-Algoritmos de juegos adversarios
-Programación lógica y sistemas expertos
-Optimización de algoritmos de IA
-Interfaz gráfica para sistemas inteligentes
 
 Autor: Hancco Vilca Yennybel Rocio
